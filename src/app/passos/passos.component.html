@@ -1,14 +1,7 @@
-<div id="identificar" class="layout-passos">
-    <div class="container">
-        <div class="row">
-            <div *ngFor="let passo of passos" class="col-sm-2">
-
-                <article class="passo">
-                    <h2 class="passo__cabecalho">{{passo.manchete}}</h2>
-                    <div class="passo__descricao">{{passo.descricao}}</div>
-                </article>
-
-            </div>
-        </div>
+<div *ngFor="let passo of passos" class="card">
+    <h3 class="card-header">Alerta {{passo.id}}</h3>
+    <div class="card-body">
+        <h5 class="card-title">{{passo.manchete}}</h5>
+        <p class="card-text">{{passo.texto}}</p>
     </div>
 </div>

@@ -12,8 +12,8 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 2, manchete: "Garantia de retorno", descricao: "Prometem retorno elevado do valor investido? Você ganhará 10%, 20% ou até mais de 50% ao mês?" },
       { id: 3, manchete: "Recrutamento infinito", descricao: "Você tem que chamar mais gente para participar ? Você ganhará mais dinheiro ao chamar mais pessoas para a empresa?" },
       { id: 4, manchete: "Produto inexistente ou inútil", descricao: "A empresa tem nenhum produto que gere receita de forma sustentável?" },
-      { id: 5, manchete: "Parente ou amigo falou da empresa", descricao: "Algum parente ou amigo que sempre se meteu em rolo te chamou para participar?" }, ,
-      { id: 6, manchete: "Não é pirâmide", descricao: "Você ouviu essa frase? A pessoa passou tempo explicando que não era pirâmide?" },
+      { id: 5, manchete: "Parente ou amigo falou da empresa", descricao: "Algum parente ou amigo que sempre se meteu em rolo te chamou para participar?" },
+      { id: 6, manchete: "Não é pirâmide", descricao: "Você ouviu essa frase? A pessoa passou tempo explicando que não era pirâmide?" }
     ];
 
     return { passos };
