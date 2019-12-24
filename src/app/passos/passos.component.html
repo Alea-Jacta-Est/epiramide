@@ -5,7 +5,8 @@
     </div>
 </div>
 
-<ngb-carousel *ngIf="passos">
+<div class="container-fluid" >
+  <ngb-carousel *ngIf="passos">
     <ng-template ngbSlide *ngFor="let passo of passos">
       <div class="picsum-img-wrapper">
         <img [src]=passo.imagemUrl alt="Alerta {{passo.id}}">
@@ -14,6 +15,6 @@
         <h3>{{passo.manchete}}</h3>
         <p>{{passo.descricao}}</p>
       </div>
-    </ng-template>
-   
+    </ng-template>   
   </ngb-carousel> 
+</div>
