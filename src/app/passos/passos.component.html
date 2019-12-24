@@ -1,7 +1,19 @@
 <div *ngFor="let passo of passos" class="card">
-    <h3 class="card-header">Alerta {{passo.id}}</h3>
+    <h3 class="card-header">Alerta {{passo.id}} - {{passo.manchete}}</h3>
     <div class="card-body">
-        <h5 class="card-title">{{passo.manchete}}</h5>
-        <p class="card-text">{{passo.texto}}</p>
+        <h5 class="card-title">{{passo.descricao}}</h5>
     </div>
 </div>
+
+<ngb-carousel >
+    <ng-template ngbSlide *ngFor="let passo of passos">
+      <div class="picsum-img-wrapper">
+        <img [src]="passo.imagemUrl" alt="Alerta {{passo.id}}">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{passo.manchete}}</h3>
+        <p>{{passo.descricao}}</p>
+      </div>
+    </ng-template>
+   
+  </ngb-carousel> 
