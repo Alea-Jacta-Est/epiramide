@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "nodemon server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,7 +22,9 @@
     "@ng-bootstrap/ng-bootstrap": "^5.1.4",
     "angular-in-memory-web-api": "^0.9.0",
     "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
+    "nodemon": "^2.0.2",
     "rxjs": "~6.4.0",
     "serialize-javascript": "^2.1.2",
     "tslib": "^1.10.0",
