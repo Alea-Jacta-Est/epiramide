@@ -1,14 +1,15 @@
 <div class="container">
     <div class="row justify-content-md-center">
       <article class="artigos">
-        <header>
-          <h3 class="">Alerta {{passoSelecionado.id}} - {{passoSelecionado.manchete}}</h3>
-        </header>
+        
 
         <img [src]=passoSelecionado.imagemUrl alt="Alerta {{passoSelecionado.id}}" (click)="onProximoPasso()">
+        <header>
+          <h3 class="cabecalho">Alerta {{passoSelecionado.id}} - {{passoSelecionado.manchete}}</h3>
+        </header>
 
         <footer>
-          <h5 class="">{{passoSelecionado.descricao}}</h5>
+          <h5 class="rodape">{{passoSelecionado.descricao}}</h5>
         </footer>
 
       </article>

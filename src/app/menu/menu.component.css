@@ -3,8 +3,12 @@
     padding: 0em;
     cursor: pointer;
     display: inline-block;
-    margin-right: 10px;
     text-decoration-line: none;
+    margin-right: 5px;
+}
+
+.menu li ::before { 
+    margin-right: 0px;
 }
 
 .menu li:hover {

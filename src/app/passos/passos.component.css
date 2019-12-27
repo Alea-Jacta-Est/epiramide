@@ -3,9 +3,11 @@ img {
     width: 35rem;    
     border-radius: 50%;
     border-style: double;
+    margin: 20px 0px;
 }
 
 .artigos {
-    align-items: center;
+    
 }
+
 
