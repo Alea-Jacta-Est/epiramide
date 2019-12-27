@@ -1,11 +1,11 @@
-.card {
-    margin: 2em;
-    border: 1px solid #95a4a5;
+img {
+    height: 30rem;
+    width: 35rem;    
+    border-radius: 50%;
+    border-style: double;
 }
 
-img {
-    object-fit: fill;
-    height: 30em;
-    width: 80em;
-    
+.artigos {
+    align-items: center;
 }
+

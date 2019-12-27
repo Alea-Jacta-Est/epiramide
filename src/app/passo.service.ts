@@ -18,7 +18,7 @@ export class PassoService {
   };
 
   constructor(
-    private http: HttpClient) { }
+    private http: HttpClient) {}
 
   getPassos(): Observable<Passo[]> {
     return this.http.get<Passo[]>(this.passosUrl).pipe(catchError(this.tratarErro<Passo[]>('getPassos', [])))

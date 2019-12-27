@@ -1,20 +1,66 @@
-<div *ngFor="let passo of passos" class="card">
-    <h3 class="card-header">Alerta {{passo.id}} - {{passo.manchete}}</h3>
-    <div class="card-body">
-        <h5 class="card-title">{{passo.descricao}}</h5>
-    </div>
+<div class="container">
+    <div class="row justify-content-md-center">
+      <article class="artigos">
+        <header>
+          <h3 class="">Alerta {{passoSelecionado.id}} - {{passoSelecionado.manchete}}</h3>
+        </header>
+
+        <img [src]=passoSelecionado.imagemUrl alt="Alerta {{passoSelecionado.id}}" (click)="onProximoPasso()">
+
+        <footer>
+          <h5 class="">{{passoSelecionado.descricao}}</h5>
+        </footer>
+
+      </article>
+  </div>
 </div>
 
-<div class="container-fluid" >
-  <ngb-carousel *ngIf="passos">
+<!-- <div class="container">
+  <div *ngFor="let passo of passos">
+    <div class="row justify-content-md-center">
+      <article class="artigos">
+        <header>
+          <h3 class="">Alerta {{passo.id}} - {{passo.manchete}}</h3>
+        </header>
+
+        <img [src]=passo.imagemUrl alt="Alerta {{passo.id}}" (click)=>
+
+        <footer>
+          <h5 class="">{{passo.descricao}}</h5>
+        </footer>
+
+      </article>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div *ngFor="let passo of passos">
+    <img [src]=passo.imagemUrl alt="Alerta {{passo.id}}">
+    <div class="card">
+      <h3 class="card-header">Alerta {{passo.id}} - {{passo.manchete}}</h3>
+      <div class="card-body">
+          <h5 class="card-title">{{passo.descricao}}</h5>
+      </div>
+    </div>    
+</div>
+
+ -->
+<!--   <ngb-carousel *ngIf="passos">
     <ng-template ngbSlide *ngFor="let passo of passos">
-      <div class="picsum-img-wrapper">
+      <div class="card">
+      <header class="card-header">
+        <h3>Alerta {{passo.id}} - {{passo.manchete}}</h3>
+      </header>
+      <div class="picsum-img-wrapper card-body">
         <img [src]=passo.imagemUrl alt="Alerta {{passo.id}}">
       </div>
       <div class="carousel-caption">
         <h3>{{passo.manchete}}</h3>
         <p>{{passo.descricao}}</p>
       </div>
+      <footer class="card-footer">
+        <h2>{{passo.descricao}}</h2>
+      </footer>
+    </div>
     </ng-template>   
-  </ngb-carousel> 
-</div>
+  </ngb-carousel>  -->
