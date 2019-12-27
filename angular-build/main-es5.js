@@ -1185,7 +1185,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }, {
             id: 4,
             manchete: "Produto inexistente ou inútil",
-            descricao: "A empresa não possui produto que gere receita de forma sustentável? A empresa vendo produto caro, obsoleto ou inútil?",
+            descricao: "A empresa não possui produto que gere receita de forma sustentável? A empresa vende produto caro, obsoleto ou inútil?",
             imagemUrl: "../assets/imagens/coleccion-iconos-negocios-color_1133-183.jpg",
             autor: "Vector de Negocios creado por dooder - www.freepik.es"
           }, {
