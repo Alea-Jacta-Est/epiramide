@@ -10,7 +10,7 @@ import { debounceTime } from 'rxjs/operators';
   styleUrls: ['./passos.component.css']
 })
 export class PassosComponent implements OnInit {
-
+ 
   passos: Passo[];
   indiceAtual: number = 6;
   passoSelecionado: Passo;
@@ -20,7 +20,7 @@ export class PassosComponent implements OnInit {
 
   ngOnInit() {
     this.getPassos();    
-  }
+  }  
 
   getPassos(): void {
     this.passosService.getPassos().subscribe(passos => this.passos = passos);        
